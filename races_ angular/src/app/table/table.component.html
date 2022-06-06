@@ -1,0 +1,47 @@
+<!-- Subtitle & dropdown button -->
+<div class="ranking">
+  <label for="button" class="btn-1_label" id="btn1-label"
+    >Ranking / Global</label
+  >
+  <div class="dropdown">
+    <button class="btn-1" id="btn-1">Select Race</button>
+    <div class="drop-content">
+      <a href="#">Global</a>
+      <a href="#">GP Barein</a>
+      <a href="#">GP Portugal</a>
+      <a href="#">GP Spain</a>
+      <a href="#">GP Monaco</a>
+      <a href="#">GP Italy</a>
+      <a href="#">GP Singapore</a>
+      <a href="#">GP Japan</a>
+      <a href="#">GP USA</a>
+      <a href="#">GP Australia</a>
+      <a href="#">GP Abu Dabi</a>
+    </div>
+  </div>
+</div>
+<!-- Table -->
+<table class="table">
+  <thead class="header">
+    <tr>
+      <th class="th-left"></th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th class="th-right">Team</th>
+    </tr>
+  </thead>
+  <tbody class="content">
+    <tr
+      class="tr-hover"
+      *ngFor="let race of races"
+      [routerLink]="['/driver/:id']"
+    >
+      <td class="pic">
+        <img src=" {{ race.picture }}" />
+      </td>
+      <td>rank</td>
+      <td>{{ race.name }}</td>
+      <td>{{ race.team }}</td>
+    </tr>
+  </tbody>
+</table>

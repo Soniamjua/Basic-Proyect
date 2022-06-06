@@ -1,0 +1,36 @@
+/** Title styles **/
+.title {
+  text-align: center;
+  margin: auto;
+  font-size: 1.75rem;
+  font-family: "Faster One";
+  letter-spacing: 0.25rem;
+  word-spacing: 0.75rem;
+  color: #58ac00;
+}
+.responsive-title {
+  color: transparent;
+  font-size: 0px;
+}
+/* Responsive title */
+
+@media (min-width: 768px) {
+  h1 {
+    color: transparent;
+    font-size: 0px;
+  }
+  .responsive-title {
+    letter-spacing: 0.125rem;
+    font-size: 1.75rem;
+    word-spacing: 0.75rem;
+  }
+  h2 {
+    font-family: "Faster One";
+    color: #58ac00;
+  }
+  I {
+    font-family: "Calibri", sans-serif;
+    color: #6d6d6d;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,129 @@
+/** Subtitle & dropdown styles **/
+.ranking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: "Calibri", sans-serif;
+  padding: 5px 5px 10px 5px;
+  width: 94%;
+}
+.btn-1_label {
+  color: #58ac00;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 0.99rem;
+  padding-left: 30px;
+}
+/* Button styles */
+.btn-1 {
+  background-color: #58ac00;
+  color: #fff;
+  border: none;
+  border-radius: 0.313rem;
+  width: 6.5rem;
+  height: 1.85rem;
+  font-size: 0.85rem;
+}
+/* Dropdown container --> position dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 6.5rem;
+  box-shadow: 0rem 0.5rem 0.5rem 0.063rem #c8c8c8;
+  z-index: 1;
+}
+/* Dropdown container --> Styles && hover */
+.drop-content a {
+  display: block;
+  color: #6d6d6d;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  /* font-family */
+  font-size: 0.85rem;
+}
+.drop-content a:hover {
+  background-color: #c8c8c8;
+}
+.dropdown:hover .drop-content {
+  display: block;
+  cursor: pointer;
+}
+.dropdown:hover .btn-1 {
+  background-color: #6d6d6d;
+  cursor: pointer;
+}
+/* Responsive styles */
+@media (min-width: 768px) {
+  .btn-1 {
+    padding: 0.525rem;
+    width: 6.875rem;
+    height: auto;
+    font-size: 1rem;
+  }
+  .btn-1_label {
+    font-size: 1.2rem;
+    padding-inline-end: 10px;
+  }
+  .drop-content {
+    width: 6.875rem;
+  }
+  .drop-content a {
+    font-size: 1rem;
+  }
+}
+/** Table styles **/
+.table {
+  margin: 0 auto;
+  align-items: center;
+  width: 94%;
+  border-collapse: collapse;
+}
+th {
+  text-align: center;
+  background-color: #58ac00;
+  color: #fff;
+  font-style: italic;
+  font-size: 0.99rem;
+  font-weight: normal;
+  font-family: "Calibri", sans-serif;
+}
+.th-left {
+  border-top-left-radius: 3.125rem;
+}
+.th-right {
+  border-bottom-right-radius: 3.125rem;
+}
+td {
+  text-align: center;
+  color: #445159;
+  font-family: "Calibri", sans-serif;
+  font-weight: normal;
+  height: 23px;
+}
+/* zebra style color */
+tr:nth-child(even) {
+  background-color: #e4e4e4;
+}
+/* Hover styles */
+.tr-hover:hover td {
+  color: #58ac00;
+  font-weight: bolder;
+  cursor: pointer;
+  padding-left: 8px;
+}
+.tr-hover:hover .pic {
+  box-shadow: inset 8px 0 0 0 #58ac00;
+}
+/* Responsive styles */
+@media (min-width: 768px) {
+  .table {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
